@@ -31,7 +31,7 @@ Route::get('/profile', [StudentController::class, 'profile'])->name('profile');
 
 
 Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [Admin::class, "dashboard"])->name('dashboard');
+    Route::get('/dashboard', [Admin::class, "dashboard"])->name('admin.dashboard');
     Route::get('/students', [Admin::class, "students"])->name('students');
 });
 

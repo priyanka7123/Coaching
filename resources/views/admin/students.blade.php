@@ -28,12 +28,16 @@
                         <th>Skills</th>
                     </tr>
 
-                    @foreach ($students as $student)
+
+
+
+                    @foreach($students as $student)
                         <tr>
                             <td>{{$student->id}}</td>
-                            <td>{{$student->name}}</td>
+                            <td>{{$student->user->name}}</td>
                             <td>{{$student->contact}}</td>
-                            <td>{{$student->email}}</td>
+                            <td>{{$student->user->email}}</td>
+                            <td>{{$student->dob}}</td>
                             <td>{{$student->gender}}</td>
                             <td>{{$student->nationality}}</td>
                             <td>{{$student->education}}</td>
